@@ -1,0 +1,36 @@
+# Spec/working documents (never committed)
+SPEC*.md
+*EXTREME*.md
+PROMPT*.md
+REVIEW*.md
+FIX_PROMPT*
+SELFREVIEW*
+DRAFT*
+REPORT.md
+INTERFACES.md
+STATUS*
+*.done
+*.reported
+
+# Build artifacts
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+
+# Runtime state
+state/
+packs/active.json
+trust.json
+lexsieve.json
+eval.json
+receipts.ndjson
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

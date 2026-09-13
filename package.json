@@ -1,0 +1,42 @@
+{
+  "name": "@latticeag/lexsieve",
+  "version": "1.0.0",
+  "description": "Return-path interceptor that delimits, classifies, and quarantines instructions hidden in tool results (protocol 1, core 1.0.0).",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "bin": {
+    "lexsieve": "./bin/lexsieve.js"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./engine": "./src/engine.ts",
+    "./eval": "./src/eval/harness.ts",
+    "./eval/fixtures": "./src/eval/fixture19.ts"
+  },
+  "files": [
+    "src",
+    "bin",
+    "dist",
+    "fixtures"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test \"test/*.test.ts\"",
+    "eval": "node bin/lexsieve.js eval --suite conformance --fixtures fixtures --seed 0 --report eval.json"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "typescript": "^5.9.2"
+  },
+  "keywords": [
+    "latticeag",
+    "prompt-injection",
+    "tool-result",
+    "proxy",
+    "security"
+  ]
+}

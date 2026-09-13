@@ -1,0 +1,12 @@
+{
+  "v": 1,
+  "suites": {
+    "conformance": {
+      "file": "conformance/vectors.json",
+      "sha256": "221b23f0abfea21d4fe6fb4c9bc80414d46c532b5423b672ec2d57a28e497714",
+      "license": "MIT",
+      "description": "LexSieve protocol-1 conformance vectors TV-L--01..60",
+      "count": 60
+    }
+  }
+}
